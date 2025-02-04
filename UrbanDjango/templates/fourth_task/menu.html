@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    {% block pagename %}
+        <h1>{{pagename}}</h1>
+    {% endblock %}
+    {% block menu %}
+        <p>
+            <ul>
+                <h3>
+                    <a href="/shop/">Главная</a>
+                </h3>
+                <h3>
+                    <a href="/shop/buy">Магазин</a>
+                </h3>
+                <h3>
+                    <a href="/shop/bag">Корзина</a>
+                </h3>
+            </ul>
+        </p>
+    {% endblock %}
+    {% block content %}
+        {% for i in content %}
+            <p>{{i}}</p>
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>

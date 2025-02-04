@@ -8,7 +8,7 @@ def main(request):
     context = {
         'title': title,
     }
-    return render(request, 'main.html', context)
+    return render(request, 'third_task/main.html', context)
 
 
 def buy(request):
@@ -24,8 +24,8 @@ def buy(request):
         'product2': product2,
         'product3': product3,
     }
-    return render(request, 'shop.html', context)
+    return render(request, 'third_task/shop.html', context)
 
 
 def bag(request):
-    return render(request, 'bag.html')
+    return render(request, 'third_task/bag.html')

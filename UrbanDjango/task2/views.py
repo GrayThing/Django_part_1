@@ -5,9 +5,9 @@ from django.views.generic import TemplateView
 
 
 def for_func(request):
-    return render(request, 'for_func.html')
+    return render(request, 'second_task/for_func.html')
 
 
 class ForClass(TemplateView):
-    template_name = 'for_class.html'
+    template_name = 'second_task/for_class.html'
     
